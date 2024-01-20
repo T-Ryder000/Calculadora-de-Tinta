@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de tinta</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/balde-de-tinta.png">
+  <link rel="stylesheet" href="./fontawesome/css/all.css">
+</head>
+<body>
+
+  <div class="containerGeral">
+    <div class="containerPrincipal">
+      <h3>Inkalc</h3>
+      <p>Encontre a quantidade de tinta necessária para pintar sua parede.</p>
+
+      <div class="containerCalcular">
+        <h4>Calculadora de tinta</h4>
+        <p>Insira abaixo a largura e altura de sua parede.</p>
+        <div class="LocalDeEntrada">
+          <div class="largura">
+            <input type="number" placeholder="Largura" id="largura">
+            <hr>
+          </div>
+          <p>X</p>
+          <div class="altura">
+            <input type="number" placeholder="Altura" id="altura">
+            <hr>
+          </div>
+        </div>
+        <div class="LocalDeComando">
+          <h4 id="calcular">Calcular</h4>
+          <h4 id="limpar">Limpar</h4>
+        </div>
+      </div>
+
+      <div class="containerResultado">
+        <div class="resultado">
+          <h3>Resultado:</h3>
+          <p class="textResultado">Aqui aparecerá o resultado de seu cálculo, indicando quantos baldes de tinta serão necessários para pintar a parede.</p>
+        </div>
+      </div>
+
+      <div class="containerContato">
+        <h3>Contatos do desenvolvedor:</h3>
+        <div class="contatos">
+          <a href="https://www.instagram.com/_thyag0?igsh=b2swd2Uzb21qOHJn" target="_blank"><i class="fa-brands fa-square-instagram" id="instagram"></i></a> 
+          <a href="https://wa.me/7591972803?text=Ol%C3%A1%2C%20Estou%20entrando%20em%20contato%20para%20solicitar%20os%20seus%20servi%C3%A7os.%20Podemos%20conversar%3F" target="_blank"><i class="fa-brands fa-square-whatsapp" id="whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

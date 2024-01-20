@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+h4{
+  font-weight: 400;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/parede.jpg);
+}
+
+p{
+  font-size: 14px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+
+.containerGeral{
+  margin-top: 2.5em;
+  max-width: 600px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+.containerPrincipal{
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.432);
+}
+
+.containerPrincipal > h3{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.containerPrincipal p{
+  padding-top: 10px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.containerCalcular{
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.432);
+ border-radius: 10px;
+  margin: 15px 0;
+}
+
+.containerCalcular h4{
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #2196F3;
+}
+.containerCalcular p{
+  font-weight: bold;
+  padding: 15px;
+}
+.LocalDeEntrada{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.LocalDeEntrada div{
+  width: 45%;
+}
+.LocalDeEntrada div input{
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid #ccc;
+}
+
+.LocalDeEntrada div input::-webkit-outer-spin-button, .LocalDeEntrada div
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.LocalDeEntrada div input:focus{
+  outline: none;
+}
+
+.LocalDeEntrada div hr{
+  margin: 5px;
+  border: 2px solid #b3b3b3;
+}
+.LocalDeComando{
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+.LocalDeComando h4{
+  cursor: pointer;
+  border-radius: 2px;
+  color: white;
+}
+#calcular{
+ background-color: #3A8338;
+ transition: transform 0.3s;
+}
+#limpar{
+background-color: #aa1111;
+transition: transform 0.3s;
+}
+
+#calcular:active{
+  transform: scale(0.95); 
+}
+#limpar:active{
+  transform: scale(0.95); 
+}
+
+
+/*////////////////////////////////////////////////////////*/
+
+.containerResultado{
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.432);
+}
+
+.resultadoNulo h3{
+  padding: 10px 0;
+}
+.resultadoNulo p{
+  width: 440px;
+}
+
+.resultado h3{
+  padding: 10px 0;
+}
+.resultado p{
+  width: 440px;
+}
+
+/*//////////////////////////////////////////////////////////////////*/
+
+.containerContato{
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.432);
+}
+
+.containerContato h3{
+  padding: 25px 15px;
+}
+
+.contatos{
+  padding: 5px 20px ;
+}
+
+.contatos a i{
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 2.5em;
+}
+
+#instagram{
+  color:  #E4405F;
+}
+#whatsapp{
+  color: #25D366;
+}
+
+@media screen and (max-height: 800px){
+  .containerGeral{
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .LocalDeComando{
+    flex-direction: column;
+  }
+}
