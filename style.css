@@ -149,14 +149,14 @@ transition: transform 0.3s;
 .resultado p{
   width: 440px;
 }
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
   .resultadoNulo p{
-    width: 400px;
+    width: 350px;
   }
   .resultado p{
-    width: 400px;
+    width: 350px;
   }
-}
+} */
 
 /*//////////////////////////////////////////////////////////////////*/
 
@@ -185,6 +185,13 @@ transition: transform 0.3s;
 }
 #whatsapp{
   color: #25D366;
+}
+
+#instagram:active{
+  transform: scale(0.95); 
+}
+#whatsapp:active{
+  transform: scale(0.95); 
 }
 
 @media screen and (max-height: 800px){
