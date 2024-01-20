@@ -149,6 +149,14 @@ transition: transform 0.3s;
 .resultado p{
   width: 440px;
 }
+@media screen and (max-width: 600px){
+  .resultadoNulo p{
+    width: 400px;
+  }
+  .resultado p{
+    width: 400px;
+  }
+}
 
 /*//////////////////////////////////////////////////////////////////*/
 
